@@ -14,5 +14,5 @@ Route::get('/test/view','Test\ViewController@index');
 
 Route::get('','User\TopController@index')->name('user.top');
 
-// Route::get('','')->name('user.pomodoro');
+Route::get('{run_str}','User\PomodoroController@index')->name('user.pomodoro');
 

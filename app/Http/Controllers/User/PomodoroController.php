@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class PomodoroController extends Controller
 {
-    //
+    public function index($run_str){
+        return view('user.pomodoro');
+    }
 }

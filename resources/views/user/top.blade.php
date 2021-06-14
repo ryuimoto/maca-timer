@@ -32,7 +32,7 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">Landing template for startups</h1>
 	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Pomodoro</a><a class="button" href="#">Get in touch</a></div>
+	                        <div class="hero-cta"><a class="button button-primary" href="{{ route('user.pomodoro',['run_str' => $run_str]) }}">Pomodoro</a><a class="button" href="#">Get in touch</a></div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -52,7 +52,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="features section">
                 <div class="container">
 					<div class="features-inner section-inner has-bottom-divider">
@@ -115,7 +114,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="pricing section">
                 <div class="container-sm">
                     <div class="pricing-inner section-inner">
