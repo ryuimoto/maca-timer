@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="ja">
   <title>ポモドーロタイマー</title>
   <link rel="stylesheet" href="{{ asset('css/index.css') }}">
   <meta name="viewport"
     content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
-
   <!-- Bootstrap 導入部分ここから -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -15,7 +13,6 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -23,7 +20,6 @@
     crossorigin="anonymous"></script>
   <!-- Bootstrap 導入部分ここまで -->
 </head>
-
 <body>
   <div id="container">
     <h3 class="title">MacaTimer</h3>
@@ -52,7 +48,6 @@
                     <a class="dropdown-item" value="45">45</a>
                   </div>
                 </div>
-
                 <div class="p-2 align-self-center">
                   <p class="textStyle2">分</p>
                 </div>
@@ -83,7 +78,6 @@
           </div>
         </div>
       </div>
-
       <!-- button -->
       <div>
         <button id="startBtn" type="button" class="secBtn btn btn-outline-secondary">スタート</button>
@@ -116,5 +110,4 @@
     </div>
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
-
 </html>

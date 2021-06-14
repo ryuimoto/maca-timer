@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/test/view','Test\ViewController@index');
+
