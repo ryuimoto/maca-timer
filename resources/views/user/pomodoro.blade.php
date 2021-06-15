@@ -12,7 +12,7 @@
     <div id="container">
         <h3 class="title">Macaタイマー</h3>
         <div id="page1">
-            <p id="timer"></p>
+            <p id="timer">{{ $pomo->timer }}</p>
             <button id="stopBtn">一時停止</button>
             <button id="cancelBtn">キャンセル</button>
         </div>

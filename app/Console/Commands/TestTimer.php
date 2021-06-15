@@ -4,6 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
+use App\Pomodoro;
+
 class TestTimer extends Command
 {
     /**
@@ -15,7 +17,7 @@ class TestTimer extends Command
 
     /**
      * The console command description.
-     *
+     *4
      * @var string
      */
     protected $description = 'Command description';
@@ -37,19 +39,23 @@ class TestTimer extends Command
      */
     public function handle()
     {
-        $m = 25;
-        $s = 59;
+        $pomo = Pomodoro::first();
+   
+        $m = 24;
+        $s = 10;
 
         for (; $m >= 0;) {
             dump(sprintf('%02d', $m).":".sprintf('%02d', $s));
             sleep(1);
             $s--;
 
-            if($s<0){
+            if($s < 0){
                 $m--;
                 $s = 59;
             }
+
+            $pomo->timer = sprintf('%02d', $m).":".sprintf('%02d', $s);
+            $pomo->save();
         }
-            
     }
 }
