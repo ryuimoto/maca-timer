@@ -11,7 +11,7 @@ class TestTimer extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'test:timer';
 
     /**
      * The console command description.
@@ -37,6 +37,19 @@ class TestTimer extends Command
      */
     public function handle()
     {
-        //
+        $m = 25;
+        $s = 59;
+
+        for (; $m >= 0;) {
+            dump(sprintf('%02d', $m).":".sprintf('%02d', $s));
+            sleep(1);
+            $s--;
+
+            if($s<0){
+                $m--;
+                $s = 59;
+            }
+        }
+            
     }
 }
