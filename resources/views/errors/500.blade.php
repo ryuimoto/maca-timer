@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/errors/404.css') }}">
-    <title>404 Error</title>
+    <title>500 Error</title>
 </head>
 <body>
     <!-- include the svg assets later used in the project -->
@@ -21,6 +21,8 @@
     <svg class="keyhole">
         <use href="#keyhole"/>
     </svg>
+    
+
     </div>
     <!-- outside of the container, to have them absolute positioned in relation to the body, include an svg for the key and one for the ghost -->
     <svg class="key">

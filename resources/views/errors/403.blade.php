@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/errors/404.css') }}">
-    <title>404 Error</title>
+    <title>403 Error</title>
 </head>
 <body>
     <!-- include the svg assets later used in the project -->
@@ -16,7 +16,7 @@
     </svg>
     <!-- include in a container a heading, paragraph and svg for the keyhole -->
     <div class="container">
-    <h1>404</h1>
+    <h1>403</h1>
     <p>access not granted</p>
     <svg class="keyhole">
         <use href="#keyhole"/>
