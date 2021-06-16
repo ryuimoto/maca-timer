@@ -14,7 +14,15 @@
         <div id="page1">
             <p id="timer">{{ $pomo->timer }}</p>
             <button id="stopBtn">一時停止</button>
-            <button id="cancelBtn">キャンセル</button>
+            <button>リスタート</button>
+            <input type="checkbox" name="repeat" value="1" >リピート
+            <select name="example1">
+                <option value="サンプル1">選択肢のサンプル1</option>
+                <option value="サンプル2">選択肢のサンプル2</option>
+                <option value="サンプル3">選択肢のサンプル3</option>
+                <option value="サンプル4">選択肢のサンプル4</option>
+                <option value="サンプル5">選択肢のサンプル5</option>
+            </select>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
