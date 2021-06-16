@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 use App\Pomodoro;
 
@@ -45,7 +46,9 @@ class TestTimer extends Command
         $s = 10;
 
         for (; $m >= 0;) {
-            dump(sprintf('%02d', $m).":".sprintf('%02d', $s));
+            // dump(sprintf('%02d', $m).":".sprintf('%02d', $s));
+            Log::debug(sprintf('%02d', $m).":".sprintf('%02d', $s));
+            
             sleep(1);
             $s--;
 

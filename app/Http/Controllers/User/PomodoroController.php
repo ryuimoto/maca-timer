@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Pomodoro;
+use Illuminate\Support\Facades\Artisan;
 
 class PomodoroController extends Controller
 {
@@ -23,11 +24,17 @@ class PomodoroController extends Controller
     }
 
     public function newPomodoro($run_str_id){
-        $pomo = Pomodoro::create([
+        Pomodoro::create([
             'run_str_id' => $run_str_id,
             'timer' => '25:00',
         ]);
 
         return $this->index($run_str_id);
+    }
+
+    public function startPomo(){
+        Artisan::call('test:timer');
+
+        return back();
     }
 }
