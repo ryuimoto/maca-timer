@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Artisan;
 class PomodoroController extends Controller
 {
     public function index($run_str_id){
-    
         $pomo = Pomodoro::where('run_str_id',$run_str_id)->first();
 
         if(is_null($pomo)){
@@ -34,7 +33,7 @@ class PomodoroController extends Controller
 
     public function startPomo(){
         Artisan::call('test:timer');
-
+        
         return back();
     }
 }
