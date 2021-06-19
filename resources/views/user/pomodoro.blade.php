@@ -102,6 +102,8 @@
         <button id="stopBtn" type="button" class="btn btn-outline-secondary">一時停止</button>
         <button id="cancelBtn" type="button" class="btn btn-outline-secondary">キャンセル</button>
       </div>
+      
+
       <audio id="sound-file-decision1" preload="auto">
         <source src="{{ asset('sound/decision1.mp3') }}" type="audio/mp3">
       </audio>
@@ -109,6 +111,7 @@
         <source src="{{ asset('sound/decision4.mp3') }}" type="audio/mp3">
       </audio>
     </div>
+    <a href="{{ route('user.top') }}">ホームに戻る</a>
     <script src="{{ asset('js/user/pomodoro.js') }}"></script>
 </body>
 

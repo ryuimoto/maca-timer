@@ -16,7 +16,7 @@ class CreatePomodorosTable extends Migration
         Schema::create('pomodoros', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('run_str_id');
-            $table->time('timer');
+            $table->integer('timer');
             $table->timestamps();
         });
     }

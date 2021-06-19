@@ -18,9 +18,8 @@ class PomodorosTableSeeder extends Seeder
 
             Pomodoro::create([
                 'run_str_id' => $run_str_id,
-                'timer' => '25:00',
+                'timer' => 25,
             ]);
-           
         }
 
     }

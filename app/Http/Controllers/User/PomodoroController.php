@@ -22,13 +22,15 @@ class PomodoroController extends Controller
         ]);
     }
 
-    public function newPomodoro($run_str_id){
+    public function newPomodoro($run_str_id){        
         Pomodoro::create([
             'run_str_id' => $run_str_id,
-            'timer' => '25:00',
+            'timer' => 25,
         ]);
-
-        return $this->index($run_str_id);
+        
+        return redirect()->route('user.pomodoro',[
+            'run_str_id' => $run_str_id,
+        ]);
     }
 
     public function startPomo(){
