@@ -1,6 +1,5 @@
 
 'use strict';
-
 {
 
   /* 変数定義 */
@@ -21,6 +20,9 @@
   let count2 = true;
   let count3 = true;
 
+  var json_value = {
+    "timer" : "{{ pomo }}",
+  };
 
   // ドロップダウンの項目を変更
   $(function () {
@@ -51,7 +53,6 @@
       startTime = Date.now();
       countDown();
     }
-    
   });
 
   // キャンセルボタン押下時処理
@@ -74,14 +75,12 @@
 
   // カウントダウン用関数
   function countDown() {
-
-
     if (workFlg == true) {
-      count = 60000 * parseInt(dropDown1.textContent);
+      // count = 60000 * parseInt(dropDown1.textContent);
+      count = 60000 * pomo['timer'];
 
     } else {
       count = 60000 * parseInt(dropDown2.textContent);
-    
     }
 
     const d = new Date(startTime - Date.now()  + elapsedTime + count);
@@ -90,7 +89,8 @@
     timer.textContent = `${m}:${s}`;
 
 
-
+    
+    
     // 残り3秒でカウントダウン音開始
     if (`${m}` == '00' && `${s}` == '03') {
       if (count3 == true) {

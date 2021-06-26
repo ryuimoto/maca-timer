@@ -22,7 +22,7 @@ class PomodoroController extends Controller
         ]);
     }
 
-    public function newPomodoro($run_str_id){        
+    public function newPomodoro($run_str_id){
         Pomodoro::create([
             'run_str_id' => $run_str_id,
             'timer' => 25,
